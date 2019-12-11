@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        {
+            "type": "che",
+            "label": "maven build",
+            "command": "mvn clean install",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/s3lvatico-core-java-11e",
+                "component": "maven"
+            }
+        },
+        {
+            "type": "che",
+            "label": "maven build and run",
+            "command": "mvn clean install && java -jar ./target/*.jar",
+            "target": {
+                "workingDir": "${CHE_PROJECTS_ROOT}/s3lvatico-core-java-11e",
+                "component": "maven"
+            }
+        }
+    ]
+}
