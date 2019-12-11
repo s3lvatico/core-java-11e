@@ -23,7 +23,6 @@
     </dependencies>
     <build>
         <plugins>
-        <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -33,12 +32,11 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.eclipse.che.examples.HelloWorld</mainClass>
+                            <mainClass>org.gmnz.corejava11.ch01.Streams1</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
-        -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
